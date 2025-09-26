@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>问卷收集</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      background: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>问卷收集</h1>
+  <form action="https://formspree.io/f/你的表单ID" method="POST">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="姓名" required>
+
+    <label for="email">邮箱：</label>
+    <input type="email" id="email" name="邮箱" required>
+
+    <label for="feedback">你的反馈：</label>
+    <textarea id="feedback" name="反馈内容" rows="4" required></textarea>
+
+    <button type="submit">提交</button>
+  </form>
+</body>
+</html>
