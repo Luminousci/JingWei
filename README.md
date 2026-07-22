@@ -1,2 +1,2 @@
-为某个比赛制作的问卷收集网页
-后端连接到Custom Forms
+# A survey collection page created for a competition
+The backend is connected to Custom Forms
